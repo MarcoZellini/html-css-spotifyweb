@@ -155,6 +155,7 @@ body {
 
 #sidebar {
     width: 230px;
+    background-color: var(--sw-black);
 }
 
 /* #endregion #sidebar */
@@ -168,9 +169,17 @@ body {
     color: var(--sw-white);
 }
 
+#site_main .card > * {
+    padding-top: .5rem;
+}
+
 #site_main h2,
-#site_main > * > h6 {
+#site_main > * > h4 {
     padding-left: 1rem;
+}
+
+#site_main .row > h6 {
+    padding-top: 1rem;
 }
 
 /* #region upgrade */
@@ -179,7 +188,7 @@ body {
     background-color: var(--sw-black-trasparent);
     position: sticky;
     top: 0;
-    padding: 1rem 0;
+    padding: 1rem .3rem;
 }
 
 /* #endregion upgrade */
@@ -210,17 +219,41 @@ body {
 
 /* #region recently_played */
 
-#recently_played .card > * {
-    padding-top: .5rem;
-}
-
 #recently_played .card > h6 {
     color: var(--sw-dark-soft);
 }
 
-
-
 /* #endregion recently_played */
+
+/* #region created_for_you */
+
+#created_for_you {
+    margin-top: 1rem;
+}
+
+#created_for_you > h4 {
+    padding-top: .5rem;
+    color: var(--sw-dark-soft);
+}
+
+/* #endregion created_for_you */
+
+/* #region most_popular */
+
+#most_popular {
+    margin-top: 1rem;
+}
+
+#most_popular > h4 {
+    padding-top: .5rem;
+    color: var(--sw-dark-soft);
+}
+
+#most_popular .card > img {
+    border-radius: 50%;
+}
+
+/* #endregion most_popular */
 
 /* #endregion #site_main */
 
@@ -230,6 +263,7 @@ body {
 
 #page-bottom {
     height: 90px;
+    background-color: var(--sw-dark);
 }
 
 /* #endregion #page-bottom */
