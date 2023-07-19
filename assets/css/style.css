@@ -8,6 +8,15 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
+:root {
+    --sw-black: #000000;
+    --sw-dark-soft: #282828;
+    --sw-dark-soft: #727479;
+    --sw-light: #c1c1c1;
+    --sw-white: #ffffff;
+    --sw-primary: #141922
+}
+
 /* #region debug */
 
 .debug #page-top {
@@ -30,9 +39,22 @@ body {
     height: 100%;
 }
 
+.debug #upgrade {
+    background-color: #ff73009f;
+    height: 50px;
+}
+
+.debug #upgrade .btn {
+    height: 30px;
+    width: 100px;
+    background-color: yellow;
+}
+
 /* #endregion debug */
 
 /* #region utilities */
+
+/* flex */
 
 .d-flex {
     display: flex;
@@ -60,6 +82,13 @@ body {
 
 #site_main {
     width: calc(100vw - 230px);
+}
+
+#upgrade .btn {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin: 10px;
 }
 
 /* #endregion #site_main */
