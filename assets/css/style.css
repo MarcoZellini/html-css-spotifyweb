@@ -166,7 +166,6 @@ body {
     overflow: auto;
     background-color: var(--sw-primary);
     color: var(--sw-white);
-    /* padding: 1rem; */
 }
 
 #site_main h2,
@@ -212,7 +211,7 @@ body {
 /* #region recently_played */
 
 #recently_played .card > * {
-    padding-top: 1rem;
+    padding-top: .5rem;
 }
 
 #recently_played .card > h6 {
