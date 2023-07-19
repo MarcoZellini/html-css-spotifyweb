@@ -10,6 +10,7 @@ body {
 
 :root {
     --sw-black: #000000;
+    --sw-black-trasparent: #00000088;
     --sw-dark-soft: #282828;
     --sw-dark-soft: #727479;
     --sw-light: #c1c1c1;
@@ -59,10 +60,6 @@ body {
     height: 30px;
     width: 100px;
     background-color: yellow;
-}
-
-.debug #upgrade .btn::after {
-    content: "debug-text";
 }
 
 .debug #filter_menu {
@@ -118,6 +115,20 @@ body {
     justify-content: space-evenly;
 }
 
+/* buttons */
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: 1px solid var(--sw-white);
+    border-radius: 15rem;
+    padding: 0.75rem 2rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
 /* #endregion utilities */
 
 /*** Desktop First ***/
@@ -141,12 +152,28 @@ body {
 #site_main {
     width: calc(100vw - 230px);
     overflow: auto;
+    background-color: var(--sw-primary);
+    color: var(--sw-white);
 }
 
-#upgrade .btn {
-    display: inline-block;
-    margin: 10px;
+/* #region upgrade */
+
+#upgrade {
+    background-color: var(--sw-black-trasparent);
+    position: sticky;
+    top: 0;
+    padding: 1rem 0;
 }
+
+/* #endregion upgrade */
+
+/* #region filter_menu */
+
+#filter_menu {
+    margin-top: 75px;
+}
+
+/* #endregion filter_menu */
 
 /* #endregion #site_main */
 
