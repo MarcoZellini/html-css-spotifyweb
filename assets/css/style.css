@@ -5,4 +5,72 @@
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;}
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* #region debug */
+
+.debug #page-top {
+    background-color: paleturquoise;
+    height: calc(100vh - 90px);
+}
+
+.debug #page-bottom {
+    background-color: palegreen;
+}
+
+.debug #sidebar {
+    background-color: palegoldenrod;
+    
+    height: 100%;
+}
+
+.debug #site_main {
+    width: calc(100vw - 230px);
+    background-color: palevioletred;
+    height: 100%;
+}
+
+/* #endregion debug */
+
+/* #region utilities */
+
+.d-flex {
+    display: flex;
+}
+
+/* #endregion utilities */
+
+/*** Desktop First ***/
+
+/* #region #page-top */
+
+#page-top {
+    height: calc(100vh - 90px);
+}
+
+/* #region #sidebar */
+
+#sidebar {
+    width: 230px;
+}
+
+/* #endregion #sidebar */
+
+/* #region #site_main */
+
+#site_main {
+    width: calc(100vw - 230px);
+}
+
+/* #endregion #site_main */
+
+/* #endregion #page-top */
+
+/* #region #page-bottom */
+
+#page-bottom {
+    height: 90px;
+}
+
+/* #endregion #page-bottom */
