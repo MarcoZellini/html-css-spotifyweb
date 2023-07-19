@@ -26,7 +26,6 @@ body {
 }
 
 .debug #site_main {
-    width: calc(100vw - 230px);
     background-color: palevioletred;
     height: 100%;
 }
@@ -74,3 +73,27 @@ body {
 }
 
 /* #endregion #page-bottom */
+
+/* #region mobile */
+
+@media screen and (max-width: 767px) {
+
+    /* #region #sidebar */
+
+        #sidebar {
+            width: 50px;
+        }
+
+    /* #endregion #sidebar */
+
+    /* #region #site_main */
+
+    #site_main {
+        width: calc(100vw - 50px);
+    }
+
+/* #endregion #site_main */
+
+}
+
+/* #endregion mobile */
