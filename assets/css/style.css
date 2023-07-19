@@ -11,7 +11,7 @@ body {
 :root {
     --sw-black: #000000;
     --sw-black-trasparent: #00000088;
-    --sw-dark-soft: #282828;
+    --sw-dark: #282828;
     --sw-dark-soft: #727479;
     --sw-light: #c1c1c1;
     --sw-white: #ffffff;
@@ -129,6 +129,18 @@ body {
     font-size: 0.8rem;
 }
 
+/* images */
+
+.img-fluid {
+    max-width: 100%;
+}
+
+/* typography */
+
+.text-center {
+    text-align: center;
+}
+
 /* #endregion utilities */
 
 /*** Desktop First ***/
@@ -154,6 +166,12 @@ body {
     overflow: auto;
     background-color: var(--sw-primary);
     color: var(--sw-white);
+    /* padding: 1rem; */
+}
+
+#site_main h2,
+#site_main > * > h6 {
+    padding-left: 1rem;
 }
 
 /* #region upgrade */
@@ -175,7 +193,7 @@ body {
 
 #filter_menu a {
     text-decoration: none;
-    color: var(--sw-light);
+    color: var(--sw-dark-soft);
     padding: 0 .5rem ;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -190,6 +208,20 @@ body {
 }
 
 /* #endregion filter_menu */
+
+/* #region recently_played */
+
+#recently_played .card > * {
+    padding-top: 1rem;
+}
+
+#recently_played .card > h6 {
+    color: var(--sw-dark-soft);
+}
+
+
+
+/* #endregion recently_played */
 
 /* #endregion #site_main */
 
