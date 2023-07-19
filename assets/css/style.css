@@ -14,7 +14,8 @@ body {
     --sw-dark-soft: #727479;
     --sw-light: #c1c1c1;
     --sw-white: #ffffff;
-    --sw-primary: #141922
+    --sw-primary: #141922;
+    --sw-success: #adff2f;
 }
 
 /* #region debug */
@@ -30,7 +31,6 @@ body {
 
 .debug #sidebar {
     background-color: palegoldenrod;
-    
     height: 100%;
 }
 
@@ -50,14 +50,50 @@ body {
     background-color: yellow;
 }
 
+.debug #upgrade .btn::after {
+    content: "debug-text";
+}
+
+.debug #filter_menu {
+    /* height: 50px; */
+    background-color: crimson;
+}
+
+.debug #filter_menu a{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: 1px dotted black;
+}
+
 /* #endregion debug */
 
 /* #region utilities */
+
+/* structure */
+
+.container-sm {
+    width: 60%;
+    max-width: 625px;
+    margin: auto;
+}
 
 /* flex */
 
 .d-flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
 }
 
 /* #endregion utilities */
@@ -84,10 +120,14 @@ body {
     width: calc(100vw - 230px);
 }
 
+#upgrade {
+    /* position: relative; */
+}
+
 #upgrade .btn {
     display: inline-block;
-    position: absolute;
-    right: 0;
+    /* position: absolute; */
+    /* right: 0; */
     margin: 10px;
 }
 
