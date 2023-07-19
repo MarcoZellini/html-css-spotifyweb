@@ -202,7 +202,7 @@ body {
 #filter_menu a {
     text-decoration: none;
     color: var(--sw-dark-soft);
-    padding: 0 .5rem ;
+    padding: .5rem ;
     text-transform: uppercase;
     font-size: 0.9rem;
     font-weight: 600;
@@ -221,6 +221,7 @@ body {
 
 #recently_played .card > h6 {
     color: var(--sw-dark-soft);
+    font-size: .85rem;
 }
 
 /* #endregion recently_played */
