@@ -20,6 +20,17 @@ body {
 
 /* #region debug */
 
+.debug [class^="col-"] {
+    background-color: red;
+
+}
+
+.debug .card {
+    background-color: white;
+    border: 1px dashed black;
+    aspect-ratio: 1 / 1;
+}
+
 .debug #page-top {
     background-color: paleturquoise;
     height: calc(100vh - 90px);
@@ -78,6 +89,17 @@ body {
     margin: auto;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0 -1rem; */
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+    padding: 1rem;
+}
+
 /* flex */
 
 .d-flex {
@@ -118,16 +140,11 @@ body {
 
 #site_main {
     width: calc(100vw - 230px);
-}
-
-#upgrade {
-    /* position: relative; */
+    overflow: auto;
 }
 
 #upgrade .btn {
     display: inline-block;
-    /* position: absolute; */
-    /* right: 0; */
     margin: 10px;
 }
 
@@ -143,9 +160,33 @@ body {
 
 /* #endregion #page-bottom */
 
+/* #region laptop */
+
+@media screen and (max-width: 1200px) {
+
+    .col-lg-3 {
+        width: calc(100% / 12 * 3);
+    }
+
+}
+
+/* #endregion laptop */
+
+/* #region tablet */
+
+@media screen and (max-width: 768px) {
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+}
+
+/* #endregion tablet */
+
 /* #region mobile */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 475px) {
 
     /* #region #sidebar */
 
