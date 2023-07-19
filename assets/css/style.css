@@ -170,7 +170,20 @@ body {
 /* #region filter_menu */
 
 #filter_menu {
-    margin-top: 75px;
+    margin: 2rem 0;
+}
+
+#filter_menu a {
+    text-decoration: none;
+    color: var(--sw-white);
+    padding: 0 .5rem ;
+}
+
+#filter_menu .underline {
+    width: 50%;
+    margin: auto;
+    padding-top: 0.1rem;
+    border-bottom: 2px solid var(--sw-success);
 }
 
 /* #endregion filter_menu */
