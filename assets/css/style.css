@@ -145,6 +145,10 @@ body {
     justify-content: space-between;
 }
 
+.justify-content-center {
+    justify-content:center;
+}
+
 .align-center {
     align-items: center;
 }
@@ -188,16 +192,20 @@ body {
 /* #region #sidebar */
 
 #sidebar {
-    /* position: relative; */
+    overflow: auto;
     width: 230px;
     background-color: var(--sw-black);
     color: var(--sw-white);
     
 }
 
-#sidebar .logo {
+#sidebar .lg-logo {
     max-width: 80%;
     padding: 1rem;
+}
+
+#sidebar .logo .xs-logo {
+    display: inline-block;
 }
 
 #sidebar .menu {
@@ -459,11 +467,70 @@ body {
 
 @media screen and (max-width: 475px) {
 
+    .d-xs-flex {
+        display: flex;
+    }
+
+    .fd-xs-column {
+        flex-direction: column;
+    }
+
+
     /* #region #sidebar */
 
         #sidebar {
             width: 50px;
         }
+
+        #sidebar .logo .lg-logo {
+            display: none;
+        }
+
+        #sidebar .logo .xs-logo {
+            display: block;
+            max-width: 80%;
+            margin: auto;
+            padding-top: .5rem ;
+        }
+
+        #sidebar .menu span {
+            display: none;
+        }
+
+        #sidebar .menu a.item {
+            padding: 0;
+            margin: auto;
+        }
+
+        #sidebar .menu a.item:first-child {
+            border: none;
+            
+        }
+
+        #sidebar .playlist-list {
+            display: none;
+        }
+
+        #sidebar .bottom {
+            padding: .5rem;
+        }
+
+        #sidebar .bottom span {
+            display: none;
+        }
+
+        #sidebar .bottom .install_link {
+            border: none;
+        }
+
+        #sidebar .bottom .install_link img {
+            margin: 0;
+        }
+
+        /* #sidebar .bottom .install_link {
+            width: 40px;
+            margin: auto;
+        } */
 
     /* #endregion #sidebar */
 
