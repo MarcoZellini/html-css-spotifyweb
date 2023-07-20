@@ -205,7 +205,7 @@ body {
 }
 
 #sidebar .logo .xs-logo {
-    display: inline-block;
+    display: none;
 }
 
 #sidebar .menu {
