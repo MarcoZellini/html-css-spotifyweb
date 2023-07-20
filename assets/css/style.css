@@ -6,6 +6,7 @@
 
 body {
     font-family: 'DM Sans', sans-serif;
+    /* overflow: hidden; */
 }
 
 :root {
@@ -187,9 +188,11 @@ body {
 /* #region #sidebar */
 
 #sidebar {
+    /* position: relative; */
     width: 230px;
     background-color: var(--sw-black);
     color: var(--sw-white);
+    
 }
 
 #sidebar .logo {
@@ -230,10 +233,6 @@ body {
     padding-left: .5rem;
 }
 
-#sidebar .playlists {
-    overflow-y: auto;
-}
-
 #sidebar .playlist-list h4 {
     padding-left: 1rem;
     margin-bottom: .5rem;
@@ -264,9 +263,9 @@ body {
     color: var(--sw-dark-soft);
 }
 
-#sidebar .playlist:first-child span{
+/* #sidebar .playlist:first-child span{
     padding-left: .5rem;
-}
+} */
 
 #sidebar .bottom {
     padding: 0 1rem; 
@@ -409,11 +408,28 @@ body {
 /* #region #page-bottom */
 
 #page-bottom {
+    position: relative;
     height: 90px;
     background-color: var(--sw-dark);
+    z-index: 1;
 }
 
 /* #endregion #page-bottom */
+
+
+/* #region vertical */
+
+@media screen and (max-height: 716px) {
+
+    .playlists {
+        height: 175px;
+        overflow-y: auto;
+    }
+
+}
+
+/* #endregion vertical */
+
 
 /* #region laptop */
 
