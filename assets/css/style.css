@@ -30,16 +30,13 @@ body {
 .debug .card {
     background-color: white;
     border: 1px dashed black;
-    aspect-ratio: 1 / 1;
+    /* aspect-ratio: 1 / 1; */
+    height: 60px;
 }
 
 .debug #page-top {
     background-color: paleturquoise;
     height: calc(100vh - 90px);
-}
-
-.debug #page-bottom {
-    background-color: palegreen;
 }
 
 /* sidebar */
@@ -96,6 +93,13 @@ body {
     border: 1px dotted black;
 }
 
+/* footer */
+
+.debug #page_bottom .row{
+    height: 100%;
+    background-color: palegreen;
+}
+
 /* #endregion debug */
 
 /* #region utilities */
@@ -116,6 +120,11 @@ body {
 
 .col-2 {
     width: calc(100% / 12 * 2);
+    padding: 1rem;
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
     padding: 1rem;
 }
 
@@ -431,16 +440,53 @@ body {
 
 /* #endregion #page-top */
 
-/* #region #page-bottom */
+/* #region #page_bottom */
 
-#page-bottom {
+#page_bottom {
     position: relative;
     height: 90px;
     background-color: var(--sw-dark);
     z-index: 1;
+    font-size: .9rem;
 }
 
-/* #endregion #page-bottom */
+#page_bottom .song {
+    color: var(--sw-dark-soft);
+}
+
+#page_bottom [class^="col-"] {
+    padding: .75rem;
+}
+
+#page_bottom .song {
+    gap: .75rem;
+    margin-top: 3px ;
+}
+
+#page_bottom .song_img {
+    width: 60px;
+}
+
+#page_bottom .song_details .artist {
+    color: var(--sw-white);
+}
+
+#page_bottom .song_details .title {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+#page_bottom .song_details .artist,
+#page_bottom .song_details .title {
+    font-weight: bold;
+
+}
+
+#page_bottom .add_to {
+    gap: .5rem;
+}
+
+/* #endregion #page_bottom */
 
 
 /* #region vertical */
