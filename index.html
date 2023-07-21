@@ -15,7 +15,7 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
-    <body class="">
+    <body class>
 
         <div id="page-top" class="d-flex">
 
@@ -307,7 +307,8 @@
                 <div class="col-4">
                     <div class="card song d-flex align-center">
                         <div class="song_img">
-                            <img class="img-fluid" src="./assets/img/sinister.jpeg" alt="">
+                            <img class="img-fluid"
+                                src="./assets/img/sinister.jpeg" alt>
                         </div>
                         <!-- /.song_img -->
                         <div class="song_details">
@@ -333,12 +334,47 @@
                 </div>
                 <!-- /.col-4 -->
                 <div class="col-4">
-                    <div class="card"></div>
+                    <div class="card player d-flex fd-column">
+                        <div
+                            class="player_settings d-flex justify-content-center align-center">
+                            <i class="fas fa-random"></i>
+                            <i class="fa-solid fa-backward-step"></i>
+                            <i class="fa-regular fa-circle-play fa-2x"></i>
+                            <i class="fa-solid fa-forward-step"></i>
+                            <i class="fa-solid fa-arrow-rotate-right"></i>
+                        </div>
+                        <!-- /.player_settings -->
+                        <div class="timeline d-flex align-center justify-content-between">
+                            <div class="realtime_timing">0.25</div>
+                            <!-- /.realtime_timing -->
+                            <div class="total_timebar">
+                                <div class="realtime_timebar"></div>
+                                <!-- /.realtime_timebar -->
+                            </div>
+                            <!-- /.timebar -->
+                            <div class="total_timing">4.35</div>
+                            <!-- /.total_timing -->
+                        </div>
+                        <!-- /.timeline -->
+                    </div>
                     <!-- /.card -->
                 </div>
                 <!-- /.col-4 -->
                 <div class="col-4">
-                    <div class="card"></div>
+                    <div class="card generals d-flex justify-end align-center">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-solid fa-display"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+
+
+                        <div class="volume_bar">
+                            <div class="volume_level"></div>
+                            <!-- /.volume_level -->
+                        </div>
+                        <!-- /.timeline -->
+
+
+                    </div>
                     <!-- /.card -->
                 </div>
                 <!-- /.col-4 -->
