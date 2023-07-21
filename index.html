@@ -121,16 +121,16 @@
                         </div>
                         <!-- /.install_link -->
                     </a>
-                    <a href="#">
-                        <div
-                            class="user d-flex align-center justify-content-xs-center">
-                            <div class="box">
-                                <img src="./assets/img/profile.svg" alt>
-                            </div>
-                            <div><span>John Doe</span></div>
+
+                    <div
+                        class="user d-flex align-center justify-content-xs-center">
+                        <div class="box">
+                            <img src="./assets/img/profile.svg" alt>
                         </div>
-                        <!-- /.user -->
-                    </a>
+                        <div><span>John Doe</span></div>
+                    </div>
+                    <!-- /.user -->
+
                 </div>
                 <!-- /.bottom -->
 
@@ -168,8 +168,14 @@
                     <div class="row">
                         <div class="col-2 col-lg-3 col-md-6">
                             <div class="card text-center">
-                                <img src="./assets/img/metal_lifting.jpg" alt
+                                <div class="img">
+                                    <img src="./assets/img/metal_lifting.jpg" alt
                                     class="img-fluid">
+                                    <div class="layover">
+                                        <i class="fa-regular fa-play-circle fa-4x fa-lg-2x fa-fw"></i>
+                                    </div>
+                                </div>
+                                
                                 <h4>Heavy Metal</h4>
                                 <h6>Subtitle</h6>
                             </div>
@@ -178,8 +184,13 @@
                         <!-- /.col-2 -->
                         <div class="col-2 col-lg-3 col-md-6">
                             <div class="card text-center">
-                                <img src="./assets/img/stranger.jpeg" alt
+                                <div class="img">
+                                    <img src="./assets/img/stranger.jpeg" alt
                                     class="img-fluid">
+                                    <div class="layover">
+                                        <i class="fa-regular fa-play-circle fa-4x fa-lg-2x fa-fw"></i>
+                                    </div>
+                                </div>
                                 <h4>Stranger Things, Vol.1 (a Netflix Original
                                     Series Soundtrack)</h4>
                                 <h6>Kyle Dixon & Michael</h6>
@@ -189,8 +200,13 @@
                         <!-- /.col-2 -->
                         <div class="col-2 col-lg-3 col-md-6">
                             <div class="card text-center">
-                                <img src="./assets/img/aquietplace.jpeg" alt
+                                <div class="img">
+                                    <img src="./assets/img/aquietplace.jpeg" alt
                                     class="img-fluid">
+                                    <div class="layover">
+                                        <i class="fa-regular fa-play-circle fa-4x fa-lg-2x fa-fw"></i>
+                                    </div>
+                                </div>
                                 <h4>A quiet place</h4>
                                 <h6>Subtitle</h6>
                             </div>
@@ -199,8 +215,13 @@
                         <!-- /.col-2 -->
                         <div class="col-2 col-lg-3 col-md-6">
                             <div class="card text-center">
-                                <img src="./assets/img/split.jpeg" alt
+                                <div class="img">
+                                    <img src="./assets/img/split.jpeg" alt
                                     class="img-fluid">
+                                    <div class="layover">
+                                        <i class="fa-regular fa-play-circle fa-4x fa-lg-2x fa-fw"></i>
+                                    </div>
+                                </div>
                                 <h4>Split</h4>
                                 <h6>Subtitle</h6>
                             </div>
@@ -209,8 +230,13 @@
                         <!-- /.col-2 -->
                         <div class="col-2 col-lg-3 col-md-6">
                             <div class="card text-center">
-                                <img src="./assets/img/cure.jpeg" alt
+                                <div class="img">
+                                    <img src="./assets/img/cure.jpeg" alt
                                     class="img-fluid">
+                                    <div class="layover">
+                                        <i class="fa-regular fa-play-circle fa-4x fa-lg-2x fa-fw"></i>
+                                    </div>
+                                </div>
                                 <h4>A cure for wellness</h4>
                                 <h6>Subtitle</h6>
                             </div>
@@ -219,8 +245,13 @@
                         <!-- /.col-2 -->
                         <div class="col-2 col-lg-3 col-md-6">
                             <div class="card text-center">
-                                <img src="./assets/img/sinister.jpeg" alt
+                                <div class="img">
+                                    <img src="./assets/img/sinister.jpeg" alt
                                     class="img-fluid">
+                                    <div class="layover">
+                                        <i class="fa-regular fa-play-circle fa-4x fa-lg-2x fa-fw"></i>
+                                    </div>
+                                </div>
                                 <h4>Sinister</h4>
                                 <h6>Subtitle</h6>
                             </div>
@@ -314,17 +345,21 @@
                         <div class="song_details">
                             <div class="artist">Sinister</div>
                             <!-- /.artist -->
-                            <div class="title">Brano nome</div>
+                            <div class="title"><a href="#">Brano nome</a></div>
                             <!-- /.title -->
                         </div>
                         <!-- /.song_details -->
                         <div class="add_to d-flex">
                             <div class="add_to_favorite">
-                                <i class="fa-regular fa-heart"></i>
+                                <a href="#">
+                                    <i class="fa-regular fa-heart"></i>
+                                </a>
                             </div>
                             <!-- /.add_to_favorite -->
                             <div class="add_to_playlist">
-                                <i class="fa-regular fa-folder"></i>
+                                <a href="#">
+                                    <i class="fa-regular fa-folder"></i>
+                                </a>
                             </div>
                             <!-- /.add_to_playlist -->
                         </div>
@@ -337,43 +372,70 @@
                     <div class="card player d-flex fd-column">
                         <div
                             class="player_settings d-flex justify-content-center align-center">
-                            <i class="fas fa-random"></i>
-                            <i class="fa-solid fa-backward-step"></i>
-                            <i class="fa-regular fa-circle-play fa-2x"></i>
-                            <i class="fa-solid fa-forward-step"></i>
-                            <i class="fa-solid fa-arrow-rotate-right"></i>
+                            <a href="#">
+                                <i class="fas fa-random"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-backward-step"></i>
+                            </a>
+                            <a href="#" class="play">
+                                <i class="not-hover fa-regular fa-circle-play fa-2x"></i>
+                                <i class="hover fa-regular fa-circle-play fa-3x"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-forward-step"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-rotate-right"></i>
+                            </a>
                         </div>
                         <!-- /.player_settings -->
-                        <div class="timeline d-flex align-center justify-content-between">
-                            <div class="realtime_timing">0.25</div>
-                            <!-- /.realtime_timing -->
-                            <div class="total_timebar">
-                                <div class="realtime_timebar"></div>
-                                <!-- /.realtime_timebar -->
+
+                        <a href="#">
+
+                            <div
+                                class="timeline d-flex align-center justify-content-between">
+                                <div class="realtime_timing">0.25</div>
+                                <!-- /.realtime_timing -->
+                                <div class="total_timebar">
+                                    <div class="realtime_timebar d-flex justify-end align-center">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                    <!-- /.realtime_timebar -->
+                                </div>
+                                <!-- /.timebar -->
+                                <div class="total_timing">4.35</div>
+                                <!-- /.total_timing -->
                             </div>
-                            <!-- /.timebar -->
-                            <div class="total_timing">4.35</div>
-                            <!-- /.total_timing -->
-                        </div>
-                        <!-- /.timeline -->
+                            <!-- /.timeline -->
+
+                        </a>
                     </div>
                     <!-- /.card -->
                 </div>
                 <!-- /.col-4 -->
                 <div class="col-4">
                     <div class="card generals d-flex justify-end align-center">
-                        <i class="fa-solid fa-list"></i>
-                        <i class="fa-solid fa-display"></i>
-                        <i class="fa-solid fa-volume-high"></i>
+                        <a href="#">
+                            <i class="fa-solid fa-list"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-display"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </a>
 
-
-                        <div class="volume_bar">
-                            <div class="volume_level"></div>
-                            <!-- /.volume_level -->
-                        </div>
-                        <!-- /.timeline -->
-
-
+                        <a href="#">
+                            <div class="volume_bar">
+                                <div
+                                    class="volume_level d-flex justify-end align-center">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                                <!-- /.volume_level -->
+                            </div>
+                            <!-- /.timeline -->
+                        </a>
                     </div>
                     <!-- /.card -->
                 </div>
